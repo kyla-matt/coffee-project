@@ -39,6 +39,7 @@ function coffeeSearch() {
 
     var selectedRoast = roastSelection.value;
     var selectedSearch = nameSelection.value;
+    selectedSearch = selectedSearch.toLowerCase();
     var filteredCoffees = [];
     coffees.forEach(function(coffee) {
         if (coffee.name.toLowerCase().indexOf(selectedSearch) > -1 && selectedRoast === "all") {
@@ -65,6 +66,14 @@ document.getElementById("addition").addEventListener("click", function(e) {
         name: newName,
         roast: newRoast
     };
+
+    for (var i = 0; i < coffees.length; i++) {
+        if (newCoffeeObject.name === coffees[i].name) {
+            return console.log(undefined);
+        } else if (coffees.length === i) {
+            break;
+        }
+    }
 
     coffees.push(newCoffeeObject);
 

@@ -13,14 +13,28 @@ body {
 .coffee {
     background-image: url("kisspng-jack-o-lantern-halloween-pumpkin-clip-art-halloween-pumpkins-5ae0838e56d725.0645269615246631823557.png");
     background-size: cover;
-    /*background-color: rgba(0,0,0, 0.5);*/
 }
 .coffee:hover{
     background-color: darkorange;
 }
- img {
+
+.container-fluid img {
      max-height: 300px;
  }
+
+.nav_web {
+    transform: rotate(272deg);
+}
+.navbar_icon {
+    max-width: 50px;
+}
+a span{
+    color: black;
+    background-color: #eb7d00;
+    font-weight: bold;
+}
+
+
 
 h1.killer {
     font-family: "haunted";
